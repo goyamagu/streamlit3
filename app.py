@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 import json
 import folium
-# from streamlit_folium import folium_static
+from streamlit_folium import folium_static
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 
@@ -55,10 +55,10 @@ if st.sidebar.button('検索開始'):
     comment = st.sidebar.empty()
     comment.write('検索を開始します')
 
-    st.write("■ジオコーダAPIより、foliumの地図を表示")
-    m = folium.Map(location=place, zoom_start=zoom) # 地図の初期設定
-    folium.Marker(location=place, popup=AREA).add_to(m)
-    folium_static(m) # 地図情報を表示
+    # st.write("■ジオコーダAPIより、foliumの地図を表示")
+    # m = folium.Map(location=place, zoom_start=zoom) # 地図の初期設定
+    # folium.Marker(location=place, popup=AREA).add_to(m)
+    # folium_static(m) # 地図情報を表示
 
     st.write("■気象情報APIより、1時間後までの降水強度を予測")
     fig = plt.figure(figsize=(9,3))
