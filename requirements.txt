@@ -1,6 +1,6 @@
-streamlit==1.2
+streamlit
 folium
-streamlit-folium>=0.5
+streamlit-folium
 requests
 matplotlib
 pandas
