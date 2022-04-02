@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 import json
 import folium
-from streamlit_folium import folium_static
+# from streamlit_folium import folium_static
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 
